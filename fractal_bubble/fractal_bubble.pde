@@ -1,17 +1,28 @@
-Bubble[] bubbles = new Bubble[10];
+Bubble[] bubbles = new Bubble[15];
+PImage fractal;
 
 void setup() {
-  size(1280,720);
+  size(720,480);
   for (int i=0; i<bubbles.length; i++){
-    bubbles[i] = new Bubble(random(width),height,random(100,200));
+    fractal = loadImage("fractal"+i%5+".png");
+    bubbles[i] = new Bubble(random(width),height/2,random(50,150),fractal);
+    
   }
 }
 void draw() {
-  background(255);
+  //background(255);
+  loadPixels();
+  for(int x =0; x<width; x++){
+    for(int y = 0; y<height; y++){
+      pixels[x+y*width] = color(random(255),25);
+    }
+  }
+  updatePixels();
   for (int i=0; i<bubbles.length; i++){
     bubbles[i].ascend();
     bubbles[i].display();
     bubbles[i].top();
+    bubbles[i].sides();
   }
 }
 
