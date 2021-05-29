@@ -5,7 +5,7 @@ void setup() {
   size(720,480);
   for (int i=0; i<bubbles.length; i++){
     fractal = loadImage("fractal"+i%5+".png");
-    bubbles[i] = new Bubble(random(width),height/2,random(50,150),fractal);
+    bubbles[i] = new Bubble(random(width),random(height),random(50,150),fractal);
     
   }
 }
