@@ -1,12 +1,18 @@
+ant colony/
 bouncing_ball/
 bubble_sketch/
 examples/
+Coding Challenges/
+img1/
 libraries/
 modes/
+patterns1/
+rand_wiggle_sound/
 shrinking_grid/
-star/
+sound_visuals/loading_sound/
+sound_visuals/loading_sound_java
+sound_visuals/waveform.zip
 templates/
 tools/
-rand_wiggle/application.*/
 patterns/
 
