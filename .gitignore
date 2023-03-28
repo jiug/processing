@@ -1,9 +1,9 @@
-ant colony/
+ant_colony/
 bouncing_ball/
 bubble_sketch/
 examples/
 Coding Challenges/
-img1/
+img_1/
 libraries/
 modes/
 patterns1/
@@ -16,4 +16,5 @@ sound_visuals/waveform.zip
 templates/
 tools/
 patterns/
+
 
